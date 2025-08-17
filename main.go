@@ -9,6 +9,10 @@ func calculation(start *int) int {
 	}
 	return *start
 }
+func UpdateV0_2() string {
+	fmt.Println("successfully updated v0.2!")
+	return "End/"
+}
 
 func main() {
 	var start int
@@ -22,4 +26,5 @@ func main() {
 	}
 	calculation(&start)
 	fmt.Println(fmt.Sprintf("Your finish value: %d", start))
+	fmt.Println(UpdateV0_2())
 }
